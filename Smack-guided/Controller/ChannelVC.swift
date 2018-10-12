@@ -23,4 +23,6 @@ class ChannelVC: UIViewController {
     @IBAction func loginBtnPressed(_ sender: Any) {
         performSegue(withIdentifier: TO_LOGIN, sender: nil)
     }
+    // This may need to go under the outlets. That's where it was in the video.
+    @IBAction func prepareforUnwind(segue: UIStoryboardSegue) {}
 }
