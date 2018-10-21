@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5C002CDC216A2ED100068C3D /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C002CDB216A2ED100068C3D /* GradientView.swift */; };
+		5C040F3E217BDF3100AD1EDE /* AuthServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C040F3D217BDF3100AD1EDE /* AuthServices.swift */; };
 		5C2BECC4216EDDA300E0D52C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2BECC3216EDDA300E0D52C /* Constants.swift */; };
 		5C2BECC6216EE2A100E0D52C /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2BECC5216EE2A100E0D52C /* LoginVC.swift */; };
 		5C77A3C12168150C000D7EC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C77A3C02168150C000D7EC2 /* AppDelegate.swift */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		5C002CDB216A2ED100068C3D /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		5C040F3D217BDF3100AD1EDE /* AuthServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServices.swift; sourceTree = "<group>"; };
 		5C2BECC3216EDDA300E0D52C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5C2BECC5216EE2A100E0D52C /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		5C77A3BD2168150C000D7EC2 /* Smack-guided.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smack-guided.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +65,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		5C040F3C217BDF0E00AD1EDE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5C040F3D217BDF3100AD1EDE /* AuthServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		5C2BECC2216EDD7200E0D52C /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +102,7 @@
 		5C77A3BF2168150C000D7EC2 /* Smack-guided */ = {
 			isa = PBXGroup;
 			children = (
+				5C040F3C217BDF0E00AD1EDE /* Services */,
 				5C2BECC2216EDD7200E0D52C /* Utilities */,
 				5CC5E3C22169517F00E52B05 /* Model */,
 				5CC5E3C12169517800E52B05 /* View */,
@@ -275,6 +286,7 @@
 				5C2BECC6216EE2A100E0D52C /* LoginVC.swift in Sources */,
 				5CC5E3C4216951B500E52B05 /* ChatVC.swift in Sources */,
 				5C002CDC216A2ED100068C3D /* GradientView.swift in Sources */,
+				5C040F3E217BDF3100AD1EDE /* AuthServices.swift in Sources */,
 				5C77A3C12168150C000D7EC2 /* AppDelegate.swift in Sources */,
 				5C77A3D62168EC49000D7EC2 /* SWRevealViewController.m in Sources */,
 			);
