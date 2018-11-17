@@ -17,6 +17,8 @@
 		5C77A3C821681511000D7EC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C77A3C721681511000D7EC2 /* Assets.xcassets */; };
 		5C77A3CB21681511000D7EC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C77A3C921681511000D7EC2 /* LaunchScreen.storyboard */; };
 		5C77A3D62168EC49000D7EC2 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C77A3D42168EC48000D7EC2 /* SWRevealViewController.m */; };
+		5C95BA57219E3DF80009BF5F /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C95BA56219E3DF80009BF5F /* AvatarPickerVC.swift */; };
+		5C95BA59219E41290009BF5F /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C95BA58219E41290009BF5F /* AvatarCell.swift */; };
 		5CB38F252170BE290015C8E6 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB38F242170BE290015C8E6 /* CreateAccountVC.swift */; };
 		5CC5C49D218BC4C700CC9AA2 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5C49C218BC4C700CC9AA2 /* RoundedButton.swift */; };
 		5CC5E3C4216951B500E52B05 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5E3C3216951B500E52B05 /* ChatVC.swift */; };
@@ -39,6 +41,8 @@
 		5C77A3D32168EC47000D7EC2 /* Smack-guided-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Smack-guided-Bridging-Header.h"; sourceTree = "<group>"; };
 		5C77A3D42168EC48000D7EC2 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		5C77A3D52168EC49000D7EC2 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		5C95BA56219E3DF80009BF5F /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
+		5C95BA58219E41290009BF5F /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
 		5CB38F242170BE290015C8E6 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		5CC5C49C218BC4C700CC9AA2 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		5CC5E3C3216951B500E52B05 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
@@ -139,6 +143,7 @@
 				5CC5E3C5216951C900E52B05 /* ChannelVC.swift */,
 				5C2BECC5216EE2A100E0D52C /* LoginVC.swift */,
 				5CB38F242170BE290015C8E6 /* CreateAccountVC.swift */,
+				5C95BA56219E3DF80009BF5F /* AvatarPickerVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -148,6 +153,7 @@
 			children = (
 				5C002CDB216A2ED100068C3D /* GradientView.swift */,
 				5CC5C49C218BC4C700CC9AA2 /* RoundedButton.swift */,
+				5C95BA58219E41290009BF5F /* AvatarCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -287,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CC5E3C6216951C900E52B05 /* ChannelVC.swift in Sources */,
+				5C95BA57219E3DF80009BF5F /* AvatarPickerVC.swift in Sources */,
 				5CC5C49D218BC4C700CC9AA2 /* RoundedButton.swift in Sources */,
 				5C2BECC4216EDDA300E0D52C /* Constants.swift in Sources */,
 				5C08582B219CFA690070815A /* UserDataService.swift in Sources */,
@@ -294,6 +301,7 @@
 				5C2BECC6216EE2A100E0D52C /* LoginVC.swift in Sources */,
 				5CC5E3C4216951B500E52B05 /* ChatVC.swift in Sources */,
 				5C002CDC216A2ED100068C3D /* GradientView.swift in Sources */,
+				5C95BA59219E41290009BF5F /* AvatarCell.swift in Sources */,
 				5C040F3E217BDF3100AD1EDE /* AuthServices.swift in Sources */,
 				5C77A3C12168150C000D7EC2 /* AppDelegate.swift in Sources */,
 				5C77A3D62168EC49000D7EC2 /* SWRevealViewController.m in Sources */,

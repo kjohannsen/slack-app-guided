@@ -19,6 +19,7 @@ class UserDataService {
     public private(set) var email = ""
     public private(set) var name = ""
     
+    // when this function is called, it takes in arguments and sets the variables in this file.
     func setUserData(id: String, color: String, avatarName: String, email: String, name: String) {
         self.id = id
         self.avatarColor = color
