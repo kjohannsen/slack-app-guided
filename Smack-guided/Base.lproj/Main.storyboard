@@ -170,6 +170,7 @@
                     </view>
                     <connections>
                         <outlet property="loginBtn" destination="0PI-Gj-5Me" id="k0f-hd-G6C"/>
+                        <outlet property="userImg" destination="o1F-yB-Wvz" id="eLa-qb-YlL"/>
                         <segue destination="i1S-PJ-lP2" kind="show" identifier="toLogin" id="UvS-gK-vte"/>
                     </connections>
                 </viewController>
@@ -208,6 +209,9 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginPressed:" destination="i1S-PJ-lP2" eventType="touchUpInside" id="qkE-9D-TI9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g7q-Qi-nZQ">
                                 <rect key="frame" x="62.5" y="352" width="250" height="30"/>
@@ -280,12 +284,17 @@
                                     </view>
                                 </subviews>
                             </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="35U-Q5-tvp">
+                                <rect key="frame" x="169" y="215" width="37" height="37"/>
+                                <color key="color" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="eGw-vp-ONr" firstAttribute="centerX" secondItem="9gS-M2-mTl" secondAttribute="centerX" id="3ef-oR-fmj"/>
                             <constraint firstItem="lnf-DX-Xyx" firstAttribute="centerX" secondItem="9gS-M2-mTl" secondAttribute="centerX" id="4VI-p4-iGr"/>
                             <constraint firstItem="eGw-vp-ONr" firstAttribute="top" secondItem="7wU-oL-reg" secondAttribute="top" constant="76" id="6gr-QG-zwK"/>
+                            <constraint firstItem="35U-Q5-tvp" firstAttribute="centerX" secondItem="9gS-M2-mTl" secondAttribute="centerX" id="9HP-o7-cZ2"/>
                             <constraint firstItem="r3y-W0-DPG" firstAttribute="top" secondItem="7wU-oL-reg" secondAttribute="top" constant="24" id="EOE-7v-XIz"/>
                             <constraint firstItem="7wU-oL-reg" firstAttribute="trailing" secondItem="r3y-W0-DPG" secondAttribute="trailing" constant="16" id="Fii-km-rrK"/>
                             <constraint firstItem="g7q-Qi-nZQ" firstAttribute="centerX" secondItem="9gS-M2-mTl" secondAttribute="centerX" id="UEe-a3-eG6"/>
@@ -293,10 +302,14 @@
                             <constraint firstItem="lnf-DX-Xyx" firstAttribute="top" secondItem="eGw-vp-ONr" secondAttribute="bottom" constant="40" id="hFP-j7-1ZC"/>
                             <constraint firstItem="G99-UC-pYf" firstAttribute="centerX" secondItem="9gS-M2-mTl" secondAttribute="centerX" id="jHY-uh-PPa"/>
                             <constraint firstItem="g7q-Qi-nZQ" firstAttribute="top" secondItem="G99-UC-pYf" secondAttribute="bottom" id="oGT-Db-9Zq"/>
+                            <constraint firstItem="35U-Q5-tvp" firstAttribute="centerY" secondItem="9gS-M2-mTl" secondAttribute="centerY" constant="-100" id="yMz-SV-JGA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7wU-oL-reg"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="35U-Q5-tvp" id="a8M-90-x30"/>
+                        <outlet property="passwordText" destination="x9Y-yC-VCI" id="2aG-rC-1Lf"/>
+                        <outlet property="userNameText" destination="Aue-j4-Lmt" id="STh-RN-XfP"/>
                         <segue destination="alI-gR-pqB" kind="show" identifier="toCreateAccount" id="eaJ-t0-Xav"/>
                     </connections>
                 </viewController>
@@ -444,7 +457,7 @@
                                 </connections>
                             </button>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="hr8-Oa-llK">
-                                <rect key="frame" x="169" y="230" width="37" height="37"/>
+                                <rect key="frame" x="169" y="215" width="37" height="37"/>
                                 <color key="color" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
                         </subviews>
@@ -462,7 +475,7 @@
                             <constraint firstItem="nZD-W7-zwZ" firstAttribute="top" secondItem="OEM-8B-Isv" secondAttribute="top" constant="76" id="SZz-cj-5MY"/>
                             <constraint firstItem="Fcq-jR-Tsj" firstAttribute="centerX" secondItem="PXK-rb-qj2" secondAttribute="centerX" id="Tc2-Xe-lOd"/>
                             <constraint firstItem="hr8-Oa-llK" firstAttribute="centerX" secondItem="PXK-rb-qj2" secondAttribute="centerX" id="dEy-JD-HFs"/>
-                            <constraint firstItem="hr8-Oa-llK" firstAttribute="centerY" secondItem="PXK-rb-qj2" secondAttribute="centerY" constant="-85" id="g93-Nu-0mO"/>
+                            <constraint firstItem="hr8-Oa-llK" firstAttribute="centerY" secondItem="PXK-rb-qj2" secondAttribute="centerY" constant="-100" id="g93-Nu-0mO"/>
                             <constraint firstItem="1Ie-be-U2p" firstAttribute="centerX" secondItem="PXK-rb-qj2" secondAttribute="centerX" id="ixE-I6-zeK"/>
                             <constraint firstItem="03S-hN-pZP" firstAttribute="centerX" secondItem="PXK-rb-qj2" secondAttribute="centerX" id="qDk-7m-ZN5"/>
                             <constraint firstItem="OEM-8B-Isv" firstAttribute="trailing" secondItem="J4e-uB-b1T" secondAttribute="trailing" constant="16" id="uqk-Yy-rxn"/>
