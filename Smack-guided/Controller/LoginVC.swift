@@ -25,7 +25,8 @@ class LoginVC: UIViewController {
     
     // MARK: Actions
     @IBAction func closedPressed(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        //dismiss(animated: true, completion: nil)
+        print("pressed")
     }
     
     @IBAction func createAccountBtnPressed(_ sender: Any) {
@@ -59,7 +60,7 @@ class LoginVC: UIViewController {
         
         passwordText.attributedPlaceholder = NSAttributedString(string: "password", attributes: [NSAttributedString.Key.foregroundColor: smackPurplePlaceholder])
         
-        let tapScreen = UIGestureRecognizer(target: self, action: #selector(tapToDismissKeyboard))
+        let tapScreen = UITapGestureRecognizer(target: self, action: #selector(LoginVC.tapToDismissKeyboard))
         view.addGestureRecognizer(tapScreen)
     }
     

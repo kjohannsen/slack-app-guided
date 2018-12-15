@@ -1,5 +1,5 @@
 //
-//  AuthServices.swift
+//  AuthService.swift
 //  Smack-guided
 //
 //  Created by Kyle Johannsen on 10/20/18.

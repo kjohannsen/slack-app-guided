@@ -28,10 +28,12 @@ typealias CompletionHandler = (_ Success: Bool) -> ()
 
 // MARK: URLs
 let BASE_URL = "https://slackchatclone.herokuapp.com/v1/"
-let URL_REGISTER = "\(BASE_URL)/account/register"
-let URL_LOGIN = "\(BASE_URL)/account/login"
-let URL_USER_ADD = "\(BASE_URL)/user/add"
-let URL_USER_BY_EMAIL = "\(BASE_URL)/user/byEmail/"
+let URL_REGISTER = "\(BASE_URL)account/register"
+let URL_LOGIN = "\(BASE_URL)account/login"
+let URL_USER_ADD = "\(BASE_URL)user/add"
+let URL_USER_BY_EMAIL = "\(BASE_URL)user/byEmail/"
+let URL_GET_CHANNELS = "\(BASE_URL)channel/"
+let URL_GET_MESSAGES = "\(BASE_URL)message/byChannel/"
 
 // MARK: Headers
 let HEADER = [
@@ -48,3 +50,5 @@ let smackPurplePlaceholder = #colorLiteral(red: 0.3254901961, green: 0.421520113
 
 // MARK: Notifications
 let NOTIF_USER_DATA_DID_CHANGE = Notification.Name("notifUserDataChanged")
+let NOTIF_CHANNELS_LOADED = Notification.Name("channelsLoaded")
+let NOTIF_CHANNEL_SELECTED = Notification.Name("channelSelected")
